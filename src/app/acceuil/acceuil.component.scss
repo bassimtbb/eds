@@ -1,0 +1,205 @@
+.navbar{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: #ffffff;
+}
+.navbar-brand{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: var(--first-color);
+    font-size: x-large;
+}
+.btn-outline-success{
+    background-color: var(--first-color);
+    color: #ffffff;
+    width: 7rem;
+    border-radius: 50px;
+    font-weight: 600;
+
+}
+.sec1{
+    align-items: center;
+    height:30rem ;
+    background-position: top;
+    background-size: cover; 
+    display: flex;
+    background-image: url("https://stagetn.com/assets/img/hero-bg.jpg");
+}
+.container{
+    height: fit-content;
+}
+.titre,.disc{
+    color: #ffffff;
+}
+.btn-outline{
+    border-color: #ffffff;
+    border-radius: 50px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+}
+.btn-outline:hover{
+ background-color: var(--first-color);
+}
+.about{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.sec2{
+    height: fit-content;
+    padding: 2rem;
+    background-color: #F6F7F6;
+}
+.cards{
+    justify-content: center;
+    gap: 5rem;
+    display: flex;
+}
+.card{
+    background-color: #F6F7F6;
+
+    width: 20rem;
+    display: grid;
+    justify-items: center;
+    border-width: 0rem;
+}
+.Tcard{
+    background-color: #F6F7F6;
+
+    color: var(--first-color);
+    font-family: 'arial', Times, serif;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.Dcard{
+    background-color: #F6F7F6;
+
+    font-family: 'arial', Times, serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.sec3{
+    display: flex;
+    gap: 17rem;
+    margin: 2rem;
+    justify-content: center;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+.disc2{
+    align-items: center;
+    height:30rem ;
+    width: 30rem;
+    background-position: top;
+    background-size: cover;
+}
+.img2{
+    border-radius: 50px;
+    align-items: center;
+    height:30rem ;
+    width: 30rem;
+    background-position: top;
+    background-size: cover; 
+    display: flex;
+    background-image: url("https://stagetn.com/assets/img/about.jpg");
+}
+
+.footer{
+
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    padding-top: 3rem;
+    padding-left: 3rem;
+    background: var(--first-color)  ;
+    color: #ffffff;
+}
+.top{
+    display: flex;
+}
+.col{   
+    justify-items: start;
+    justify-content: center;
+    display: grid;
+}
+.titreF a{
+    display: grid;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    text-decoration: none;
+    color: white;
+
+}
+.links svg ,.legal span{
+    font-size: x-large;
+    margin-left: 1rem;
+    
+   }
+.bottom {
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+}
+@media screen and (max-width:993px){  
+    .cards,.sec2,.top,.bottom{
+        flex-wrap: wrap;
+    }
+    .cards{
+        justify-items: center;
+    }
+    .sec2{ 
+    gap: 2rem;
+    }
+        
+}
+.sec4{
+height: fit-content;
+display: grid;
+gap: 2rem;
+justify-items: center;
+padding-bottom: 2rem;
+padding-top: 2rem;
+background-color: #F6F7F6;
+
+}
+.li{
+display: flex;
+gap: 2rem;
+}
+.cl p{
+    margin-top:1rem ;
+    margin-top:1rem ;
+
+}
+.cl p:hover{color: var(--first-color);}
+.discI{
+
+    font-size: larger;
+    font-weight: 700;
+    
+}
+.cl{
+    gap: .5rem;
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e6e6e5;
+    width: 19rem;
+}
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: 3rem;
+    background-color: #656B85;
+    padding: 6px;
+    display: inline-flex;
+    border-radius: .25rem;
+    color: var(--first-color);
+    box-shadow: 0 4px 12px hsla(228, 15%, 8%, .4);
+    z-index: var(--z-tooltip);
+    transition: bottom .4s, transform .4s;
+}
+.scrollup:hover{
+    transform: translate(-.25rem);
+}
