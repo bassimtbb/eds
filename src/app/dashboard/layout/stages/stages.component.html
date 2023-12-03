@@ -1,0 +1,37 @@
+<div>
+    <div class="title">
+        <h1>Stage</h1>
+        <p>Nous mettrons à disposition les challenges, une plateforme d'apprentissage, des experts ainsi que des conseils essentiels tout au long de votre parcours, afin de catalyser votre plein potentiel et votre créativité.</p>
+    </div>
+    <div class="body">
+        <div class="search">
+                <div class="colS">
+                  <div class="input-group">
+                    <input type="search" id="searchp" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" onkeyup="searchTitre()">
+                    <button onclick="searchTitre()" type="button" class="btn btn-outline-primary">
+                      search
+                    </button>
+                  </div>
+                </div>            
+                <div class="colS">
+                  <select id="diplome" class="form-select" onchange="diplome()" aria-label="Default select example">
+                    <option *ngFor="let diplome of diplomes" value={{diplome.value}}>{{diplome.viewValue}}
+                  </select>
+                </div>
+                <div class="colS">
+                    <select id="localisation" onchange="localisation()" class="form-select" aria-label="Default select example">
+                      <option  *ngFor="let ville of villes" value={{ville.value}}>{{ville.viewValue}}</option>
+                    </select>
+                </div>
+                <div class="colS">
+                    <select id="localisation" onchange="localisation()" class="form-select" aria-label="Default select example">
+                      <option  *ngFor="let Tsatge of Tsatges" value={{Tsatge.value}}>{{Tsatge.viewValue}}</option>
+                    </select>
+                </div>
+        </div>
+        
+        <div class="cards">
+
+        </div>
+    </div>
+</div>

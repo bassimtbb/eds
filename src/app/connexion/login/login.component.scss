@@ -1,0 +1,139 @@
+$primary: var(--first-color);
+$secondary: #b3c4e2;
+$white: #fff;
+$gray: #9b9b9b;
+.title{
+    height: 6rem;
+    background-color: var(--first-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        color: white;
+    }
+}
+.login{
+    gap: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imag{
+    border-radius: 50px;
+    align-items: center;
+    height:30rem ;
+    width: 30rem;
+    background-position: top;
+    background-size: cover; 
+    display: flex;
+    background-image: url("../../../assets/login.svg");
+}
+.submit{     
+    input[type=submit] {
+        background-color: var(--first-color);
+        border: none;
+        color: #fff;
+        border-radius: 30px;
+        padding: 15px 120px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    padding-top: 30px;
+    text-align: center;
+}
+    .form__field {
+        font-family: inherit;
+        width: 300px;
+        border: 0;
+        border-bottom: 2px solid $gray;
+        outline: 0;
+        font-size: 20px;
+        color: black;
+        padding: 7px 0;
+        background: transparent;
+        transition: border-color 0.2s;
+
+        &::placeholder {
+            color: transparent;
+        }
+
+        &:placeholder-shown ~ .form__label {
+            font-size: 15px;
+            cursor: text;
+            top: 20px;
+        }
+    }   
+.form__group {
+        position: relative;
+        padding: 15px 0 0;
+        margin-top: 10px;
+        width: 50%;
+        justify-content: center;
+    }
+        .form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 12px;
+        color: $gray;
+    }
+
+    .form__field:focus {
+        ~ .form__label {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 15px;
+            color: $primary;
+        }
+        padding-bottom: 6px;  
+        font-weight: 300;
+        border-width: 3px;
+        border-image: linear-gradient(to right, $primary,$secondary);
+        border-image-slice: 1;
+    }
+    /* reset input */
+    .form__field{
+        &:required,&:invalid { box-shadow:none; }
+    }
+.sec1{
+    padding-bottom:30px ;
+}
+.sec2{
+text-align: center;
+    gap: .5rem;
+    display: grid;
+}
+.sec2{
+    display: flex;
+}
+.radio p{
+    color: #9b9b9b;
+}
+.radio{
+    display: flex;
+    .rCheck{
+        padding-left: 2rem;
+        display: grid;
+    }
+}
+@media screen and (max-width:993px){  
+    .login{
+        flex-wrap: wrap; 
+        gap: 0rem;
+    }
+    .imag{
+        height:20rem ;
+        width: 20rem;
+    }
+    .sec2{
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+       
+    
+}

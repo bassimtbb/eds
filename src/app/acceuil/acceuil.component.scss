@@ -1,22 +1,4 @@
-.navbar{
-    padding-left: 3rem;
-    padding-right: 3rem;
-    background-color: #ffffff;
-}
-.navbar-brand{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
-    color: var(--first-color);
-    font-size: x-large;
-}
-.btn-outline-success{
-    background-color: var(--first-color);
-    color: #ffffff;
-    width: 7rem;
-    border-radius: 50px;
-    font-weight: 600;
 
-}
 .sec1{
     align-items: center;
     height:30rem ;
@@ -104,53 +86,19 @@
     display: flex;
     background-image: url("https://stagetn.com/assets/img/about.jpg");
 }
-
-.footer{
-
-    overflow-y: hidden; /* Hide vertical scrollbar */
-    padding-top: 3rem;
-    padding-left: 3rem;
-    background: var(--first-color)  ;
-    color: #ffffff;
-}
-.top{
-    display: flex;
-}
-.col{   
-    justify-items: start;
-    justify-content: center;
-    display: grid;
-}
-.titreF a{
-    display: grid;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    text-decoration: none;
-    color: white;
-
-}
-.links svg ,.legal span{
-    font-size: x-large;
-    margin-left: 1rem;
-    
-   }
-.bottom {
-    border-top: 2px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 2rem;
-}
 @media screen and (max-width:993px){  
-    .cards,.sec2,.top,.bottom{
+    .cards,.sec2,.top,.li,.bottom{
         flex-wrap: wrap;
+        justify-content: center;
+
     }
     .cards{
         justify-items: center;
     }
-    .sec2{ 
-    gap: 2rem;
+    .sec3{ 
+    gap: 0rem;
     }
+    
         
 }
 .sec4{

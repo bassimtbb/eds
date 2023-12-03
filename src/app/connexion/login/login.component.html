@@ -1,0 +1,105 @@
+<app-header></app-header>
+<div>
+    <div class="title">
+        <h1>Authentification</h1>
+    </div>
+    <div class="login">
+        <mat-tab-group>
+                <mat-tab label="Login">
+                    <form action="#">
+                        <div class="sec1">
+                            <div class="form__group field">
+                                <input type="email" class="form__field" placeholder="Email" name="Email" id='Email' required />
+                                <label for="Email" class="form__label">Email</label>
+                            </div>
+                            <div class="form__group field">
+                                <input type="password" class="form__field" placeholder="password" name="password" id='password' required />
+                                <label for="password" class="form__label">password</label>
+                            </div>
+                            <div class="submit"  ><input routerLinkActive="List-item-active" routerLink="/dashboard" type="submit" value="Submit"></div>
+                        </div>
+                        <div class="sec2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Remember me
+                                </label>
+                                <a routerLinkActive="List-item-active"routerLink="/forget">Forgot password?</a>
+                            </div>
+                        </div>   
+                    </form>
+                </mat-tab>
+                <mat-tab label="Sign up">
+                    <form  >
+                                <div class="sec2">
+                                    <div class="col1">
+                                        <div class="form__group field">
+                                            <input type="email" class="form__field" placeholder="Email" name="email" id='Email' required />
+                                            <label for="Email" class="form__label">Email</label>
+                                        </div> 
+                                        <div class="form__group field">
+                                            <input type="text" class="form__field" placeholder="First Name" name="first_name" id='name' required />
+                                            <label for="name" class="form__label">First Name</label>
+                                        </div>
+                                        <div class="form__group field">
+                                            <input type="date" class="form__field" placeholder="Birthday" name="birthday" id='birthday' required />
+                                            <label for="birthday" class="form__label">Birthday</label>
+                                        </div>
+                                        <div class="radio">
+                                            <p class="titre">Gender :</p>
+                                            <div class="rCheck">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio"  value ="male"name="genre" id="male">
+                                                <label class="form-check-label" for="male">
+                                                Male
+                                                </label>
+                                             </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" value ="female" name="genre" id="female" checked>
+                                                <label class="form-check-label" for="female">
+                                                Female
+                                                </label>
+                                             </div></div>
+                                        </div>
+                                    </div>
+                                    <div class="col2">
+                                        <div class="form__group field">
+                                            <input type="password" class="form__field" placeholder="password" name="password" id='password' required />
+                                            <label for="password" class="form__label">password</label>
+                                        </div>
+                                        <div class="form__group field">
+                                            <input type="text" class="form__field" placeholder="Last Name" name="last_name" id='lastn' required />
+                                            <label for="lastn" class="form__label">Last Name</label>
+                                        </div>
+                                      
+                                        <div class="form__group field">
+                                            <input type="number" class="form__field" placeholder="Mobile number" name="phone_num" id='phone' required />
+                                            <label for="phone" class="form__label">Mobile number</label>
+                                        </div>
+                                        <div class="radio">
+                                            <p class="titre">Type :</p>
+                                            <div class="rCheck">
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="type" id="freelance">
+                                                <label class="form-check-label" for="freelance">
+                                                Stagiaire 
+                                                </label>
+                                             </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="type" id="client" checked>
+                                                <label class="form-check-label" for="client">
+                                                Entreprise 
+                                                </label>
+                                             </div>
+                                            </div>
+                                        </div>
+                                    </div>                        
+                                </div>
+                                <div class="submit"  ><input routerLinkActive="List-item-active" routerLink="/dashboard" type="submit" value="Submit"></div>
+                            </form>
+                </mat-tab>
+        </mat-tab-group>
+        <div class="imag"></div>
+    </div>
+</div>
