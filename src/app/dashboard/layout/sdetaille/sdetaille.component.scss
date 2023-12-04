@@ -1,0 +1,106 @@
+.title{
+    padding:2rem ;
+    background-color: var(--first-color);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    h1,p{
+       
+        color: white;
+        text-align: center;
+    }
+}
+.body{
+    display: grid;
+}
+
+.stage{
+    display: flex;
+}
+.col1{
+    padding: 3rem;
+    display: grid;
+    width: 60%;
+}
+.col2{
+    padding: 3rem;
+    display: grid;
+    width: 40%;
+
+}
+.img{
+    width: 100%;
+    height: 20rem;
+    background-image: url("https://media.geeksforgeeks.org/wp-content/uploads/20230911173805/What-is-Artiificial-Intelligence(AI).webp");
+    align-items: center;
+    background-position: top;
+    background-size: cover; 
+    display: flex;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+.col2{
+    display: grid;
+    gap: 1rem;
+}
+.cara{
+    background-color: #F6F7F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    padding-left:1rem ;
+    padding-right: 1rem;
+}
+
+.card-text{
+text-justify: inter-word;
+}
+.titre
+ {
+    color: #617067;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: auto;
+    margin-bottom: 2px;
+}
+.reponse,.list {
+    color: #657A6D;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-bottom: 2px;
+}
+.list {
+    color: #657A6D;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    padding-right:1rem ;
+    margin-bottom: 2px;
+}
+.postuler{
+    display: flex;
+}
+.btn{
+    background-color: var(--first-color);
+    color: white;
+    padding: 0%;
+    font-size: larger;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width:993px){  
+ .body,.stage{
+    display: grid;
+ }
+ .col1,.col2{
+    width: 100%;
+}
+.btn{
+    padding: .5rem;
+}
+
+}

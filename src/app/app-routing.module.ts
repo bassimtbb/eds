@@ -6,11 +6,14 @@ import { SignupComponent } from './connexion/signup/signup.component';
 import { ForgetpComponent } from './connexion/forgetp/forgetp.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StagesComponent } from './dashboard/layout/stages/stages.component';
+import { SdetailleComponent } from './dashboard/layout/sdetaille/sdetaille.component';
 
 const routes: Routes = [
   {path:'',component:DashboardComponent,
   children:[
     {path:'',component:StagesComponent},
+    {path:'stage',component:StagesComponent},
+    {path:'Sdetaille',component:SdetailleComponent},
  
    
   ]},
