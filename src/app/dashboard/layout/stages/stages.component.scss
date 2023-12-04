@@ -24,9 +24,56 @@
     align-items: center;
     gap: 2rem;
 }
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
 .form-select{
     width: fit-content;
 }
+.card-img-top{
+    background-image: url("https://media.geeksforgeeks.org/wp-content/uploads/20230911173805/What-is-Artiificial-Intelligence(AI).webp");
+    width: 18rem;
+    height: 8rem;
+    align-items: center;
+    background-position: top;
+    background-size: cover; 
+    display: flex;
+}
+.card-head{
+   .date{
+    margin: 0%;
+    margin-bottom: .5rem;
+   }
+   padding-left: 1rem;
+   padding-right: 1rem;
+}
+.card-body{
+     padding: 0%;
+     padding-left: 1rem;
+     padding-right: 1rem;
+ }
+.card-footer,.headD {
+    display: flex;
+   
+}
+.Enreprise,.Domaine
+ {
+    margin-right: auto;
+    margin-bottom: 2px;
+}
+.localisation,.Tstage {
+    margin-left: auto;
+    margin-bottom: 2px;
+}
+
+.diplome,.card-text,.card-title{
+    margin-bottom: .5rem;
+}
+
 @media screen and (max-width:993px){  
     .search{
         flex-wrap: wrap;
