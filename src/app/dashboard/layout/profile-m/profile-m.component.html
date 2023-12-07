@@ -1,0 +1,185 @@
+    <h1 class="header">Information du compte</h1>
+    <div class="body">
+
+    <div class="img">
+        <button type="button" class="btn pic btn-success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
+                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001"/>
+              </svg>
+          </button>
+    </div>
+    <div class="donnees">
+        <div class="link" (click)="openModel('nom')">
+            <div class="left">
+                <p class="titre">Nom et Prénom</p>
+                <p class="data">Bassim Tabbeb</p>
+            </div>
+            <div class="right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi icon bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="link" (click)="openModel('email')">
+          <div class="left">
+              <p class="titre">Email</p>
+              <p class="data">bassim.tabbeb@gmail.com</p>
+          </div>
+          <div class="right">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi icon bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+          </div>
+      </div>
+
+        <div class="link" (click)="openModel('mdp')">
+          <div class="left">
+              <p class="titre">Mot de passe</p>
+              <p class="data">****************</p>
+          </div>
+          <div class="right">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi icon bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+          </div>
+      </div>  
+        <div class="link" (click)="openModel('bthd')">
+            <div class="left">
+                <p class="titre">Date de naissance</p>
+                <p class="data">11/02/2000</p>
+            </div>
+            <div class="right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi icon bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="link" (click)="openModel('numt')">
+            <div class="left">
+                <p class="titre">Numero de téléphone</p>
+                <p class="data"><span>+216</span>58 208 705</p>
+            </div>
+            <div class="right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi icon bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </div>
+        </div> 
+                           
+    </div>
+</div>
+
+
+
+
+
+  <div class="dialog " id="nom" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title " >Modifier </h1>
+          <button type="button" class="btn-close" (click)="closeModel('nom')" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div><form (ngSubmit)="closeModel('nom')" class="row g-3">
+        <div class="modal-body">
+                <div class="">
+                  <label for="validationServer01" class="form-label">Prénom</label>
+                  <input type="text" class="form-control " id="validationServer01"  required>
+                </div>
+                <div class="">
+                  <label for="validationServer02" class="form-label">Nom</label>
+                  <input type="text" class="form-control " id="validationServer02"  required>
+                </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" (click)="closeModel('nom')" data-bs-dismiss="modal">Annuler</button>
+          <button class="btn btn-primary"  type="submit">Mettre à jour</button>
+        </div></form>
+      </div>
+  </div>
+
+  <div class="dialog " id="mdp" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title " >Modifier </h1>
+        <button type="button" class="btn-close" (click)="closeModel('mdp')" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div><form (ngSubmit)="closeModel('mdp')" class="row g-3">
+      <div class="modal-body">
+        <div class="">
+          <label for="validationServer01" class="form-label">Mot de passe</label>
+          <input type="password" class="form-control " id="validationServer01"  required>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="closeModel('mdp')" data-bs-dismiss="modal">Annuler</button>
+        <button class="btn btn-primary"  type="submit">Mettre à jour</button>
+      </div></form>
+    </div>
+  </div>
+  <div class="dialog " id="email" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title " >Modifier </h1>
+        <button type="button" class="btn-close" (click)="closeModel('email')" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div><form (ngSubmit)="closeModel('email')" class="row g-3">
+      <div class="modal-body">
+              <div class="">
+                <label for="validationServer01" class="form-label">Email</label>
+                <input type="Email" class="form-control " id="validationServer01"  required>
+              </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="closeModel('email')" data-bs-dismiss="modal">Annuler</button>
+        <button class="btn btn-primary"  type="submit">Mettre à jour</button>
+      </div></form>
+    </div>
+</div>
+
+<div class="dialog " id="bthd" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title " >Modifier </h1>
+        <button type="button" class="btn-close" (click)="closeModel('bthd')" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div><form (ngSubmit)="closeModel('bthd')" class="row g-3">
+      <div class="modal-body">
+              <div class="">
+                <label for="validationServer01" class="form-label">Date de naissance</label>
+                <input type="date" class="form-control " id="validationServer01"  required>
+              </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="closeModel('bthd')" data-bs-dismiss="modal">Annuler</button>
+        <button class="btn btn-primary"  type="submit">Mettre à jour</button>
+      </div></form>
+    </div>
+</div>
+
+
+<div class="dialog " id="numt" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title " >Modifier </h1>
+        <button type="button" class="btn-close" (click)="closeModel('numt')" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div><form (ngSubmit)="closeModel('numt')" class="row g-3">
+      <div class="modal-body">
+        <div>
+            <label for="validationServer01" class="form-label">Numero de téléphone</label>
+            <div style="display: flex;">
+                <span class="input-group-text" id="basic-addon1">+216</span>
+                <input type="number" class="form-control" required aria-describedby="basic-addon1">
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="closeModel('numt')" data-bs-dismiss="modal">Annuler</button>
+        <button class="btn btn-primary"  type="submit">Mettre à jour</button>
+      </div></form>
+    </div>
+
+
+
+  
+  
+  
+  
+
+

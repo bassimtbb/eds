@@ -1,0 +1,56 @@
+<div>
+    <div class="title">
+        <h1>Publier une idée</h1>
+        <!-- <p>Nous mettrons à disposition les challenges, une plateforme d'apprentissage, des experts ainsi que des conseils essentiels tout au long de votre parcours, afin de catalyser votre plein potentiel et votre créativité.</p> -->
+    </div>
+    <div class="body">
+        <form>
+            <div class="sec1">
+                <div class="form__group field">
+                    <input type="text" class="form__field" placeholder="Titre" name="Titre" id='Titre' required />
+                    <label for="Titre" class="form__label">Titre</label>
+                </div>
+                <div class="form__group field">
+                    <textarea  class="form__field" placeholder="Description" name="Description" id='Description' required ></textarea>
+                    <label for="Description" class="form__label">Description</label>
+                </div> 
+                <div class="form-group field">
+                    <label for="file" class="label-file">Choisir une image</label>
+                    <input id="file" class="input-file" type="file">
+                </div>
+                <div  class="chips" >
+                    <mat-chip-grid  #chipGrid aria-label="Enter skills">
+                        <div class="allchips">
+                            <div class=" form-group field">
+                                <label for="competence" class=" chipslabel">Competences</label>
+                                <input type="text" name="competence" id="competence" class="form__field"
+                                        placeholder="Enter skills"
+                                        [matChipInputFor]="chipGrid"
+                                        [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                                        [matChipInputAddOnBlur]="addOnBlur"
+                                        (matChipInputTokenEnd)="add($event)"/>
+                            </div>        
+                        <div class="outputchips">
+                            <mat-chip-row *ngFor="let skill of skills"
+                                            (removed)="remove(skill)"
+                                            [editable]="true"
+                                            (edited)="edit(skill, $event)"
+                                            [aria-description]="'press enter to edit ' + skill.name">
+                                {{skill.name}}
+                                <button matChipRemove [attr.aria-label]="'remove ' + skill.name">
+                                <mat-icon>cancel</mat-icon>
+                                </button>
+                            </mat-chip-row>
+                        </div>
+
+                    </div>
+                    </mat-chip-grid>
+                  </div>
+                </div>
+                <div class="submit"  ><input routerLinkActive="List-item-active" routerLink="/dashboard" type="submit" value="Poster"></div>
+            
+          </form>
+          <div class="img"></div>
+    </div>
+
+</div>

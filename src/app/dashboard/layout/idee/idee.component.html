@@ -1,0 +1,30 @@
+<div>
+    <div class="title">
+        <h1>Vos Idées</h1>
+        <!-- <p>Nous mettrons à disposition les challenges, une plateforme d'apprentissage, des experts ainsi que des conseils essentiels tout au long de votre parcours, afin de catalyser votre plein potentiel et votre créativité.</p> -->
+    </div>
+    <div class="buttons">
+        <button  routerLinkActive="List-item-active" routerLink="/postei" class="btn btn-outline-success  ms-2  my-2 my-sm-0" >Poster une Idée</button>
+    </div>
+    <hr>
+    <div class="body">
+        <div class="cards">
+            <div class="card" style="width: 20rem;">
+              <a routerLinkActive="List-item-active" routerLink="/idetaille"  >
+                <div  class="card-img-top" ></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Chat bot</h5>
+                    <p class="date">12/02/2024</p>
+                    <p class="card-text">Join Inova IT as a Data Scientist specializing in the automotive domain and play a pivotal role in leveragintion,</p>
+                  </div>
+                  <div class="footD">
+                    <mat-chip-set class="example-chip"  cdkDropList cdkDropListOrientation="horizontal">
+                            <mat-chip *ngFor="let competence of competences"  class="example-box" cdkDrag>{{competence.name}}</mat-chip>
+                   
+                    </mat-chip-set>
+                </div>
+              </a>
+              </div>
+        </div>
+    </div>
+</div>

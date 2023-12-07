@@ -23,6 +23,18 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { SdetailleComponent } from './dashboard/layout/sdetaille/sdetaille.component';
+import { BdetailleComponent } from './dashboard/layout/bdetaille/bdetaille.component';
+import {MatChipsModule} from '@angular/material/chips';
+import { PosteIComponent } from './dashboard/layout/poste-i/poste-i.component';
+import { IdetailleComponent } from './dashboard/layout/idetaille/idetaille.component';
+import { IdeeComponent } from './dashboard/layout/idee/idee.component';
+import { ProfileComponent } from './dashboard/layout/profile/profile.component';
+import { PortfolioComponent } from './dashboard/layout/portfolio/portfolio.component';
+import { SecuriteComponent } from './dashboard/layout/securite/securite.component';
+import {MatStepperModule} from '@angular/material/stepper';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ProfileMComponent } from './dashboard/layout/profile-m/profile-m.component'; // Importez ReactiveFormsModule
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +48,15 @@ import { SdetailleComponent } from './dashboard/layout/sdetaille/sdetaille.compo
     FooterComponent,
     StagesComponent,
     BlogComponent,
-    SdetailleComponent
+    SdetailleComponent,
+    BdetailleComponent,
+    PosteIComponent,
+    IdetailleComponent,
+    IdeeComponent,
+    ProfileComponent,
+    PortfolioComponent,
+    SecuriteComponent,
+    ProfileMComponent
     ,
   ],
   imports: [
@@ -50,7 +70,10 @@ import { SdetailleComponent } from './dashboard/layout/sdetaille/sdetaille.compo
     MatSelectModule,
     FormsModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatChipsModule,
+    MatStepperModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

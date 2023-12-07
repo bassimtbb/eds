@@ -2,6 +2,7 @@
     padding-left: 3rem;
     padding-right: 3rem;
     background-color: #ffffff;
+
 }
 .navbar-brand{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -25,4 +26,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media screen and (max-width:993px){  
+    .navbar{
+        padding-left: 1rem;
+        padding-right: 1rem;        
+    }
+    
+        
 }

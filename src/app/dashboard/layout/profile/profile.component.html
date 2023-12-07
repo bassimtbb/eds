@@ -1,0 +1,50 @@
+<div>
+    <div class="title">
+        <h1>Profile</h1>
+    </div>
+      <div class="body">
+        <div class="nav">
+          <div class="links" routerLinkActive="List-item-active"  routerLink="/profile/Compte">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
+            </svg>
+            <a class="link">Profile</a>
+          </div>
+
+          <div class="links" routerLinkActive="List-item-active"  routerLink="/profile/portfolio">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z"/>
+            </svg>
+            <a class="link">Portfolio</a>
+          </div>
+
+            
+        </div>
+        <div class="Dprofile">
+          <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="dialog " id="numt" >
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title " >Modifier </h1>
+      <button type="button" class="btn-close" (click)="closeModel('numt')" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div><form (ngSubmit)="closeModel('numt')" class="row g-3">
+    <div class="modal-body">
+      <div>
+          <label for="validationServer01" class="form-label">Numero de téléphone</label>
+          <div style="display: flex;">
+              <span class="input-group-text" id="basic-addon1">+216</span>
+              <input type="number" class="form-control" required aria-describedby="basic-addon1">
+          </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" (click)="closeModel('numt')" data-bs-dismiss="modal">Annuler</button>
+      <button class="btn btn-primary"  type="submit">Mettre à jour</button>
+    </div></form>
+  </div>

@@ -1,0 +1,84 @@
+.title{
+    padding:2rem ;
+    background-color: var(--first-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    h1,p{
+       
+        color: white;
+        text-align: center;
+    }
+}
+.body{
+    display: flex;
+}
+.nav{
+    margin-top: 1rem;
+    border-right: solid 2px var(--first-color) ;
+    display: grid; 
+    padding: 10px;
+    margin-right: 2rem;
+    gap: 5px;
+    height: 100%;
+    width: 15%;
+}
+.links{
+    cursor: pointer;
+    padding: 1rem;
+
+}
+.link,.icon{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.icon{
+    margin-right: .5rem;
+}
+.links:hover{
+    background: radial-gradient(circle at 10% 20%, rgba(216, 241, 230, 0.46) 0.1%, rgba(233, 226, 226, 0.28) 90.1%);
+    color: var(--first-color);
+    font-weight: 600;
+    border-radius: 10px;
+}
+.List-item-active{
+    .link,.icon{    color: var(--first-color);
+    }
+    color: var(--first-color);
+    font-weight: 600;
+    border-radius: 10px;
+    border-left:solid 9px var(--first-color) ; 
+}
+
+.Dprofile{
+    width: 90%;
+    
+    padding: 1rem;
+}
+@media screen and (max-width:993px){  
+    .body{
+        flex-wrap: wrap;
+    }
+    .nav{
+        margin-top: 1rem;
+        border-bottom: solid 2px var(--first-color) ;
+        display: flex; 
+        padding: 10px;
+        gap: 0%;
+        margin-right: 0rem;
+        height: 100%;
+        width: 100%;
+    }
+    .List-item-active{
+        .link,.icon{
+                color: var(--first-color);
+        }
+        color: var(--first-color);
+        font-weight: 600;
+        border-radius: 10px;
+        border-left:solid 0px var(--first-color) ; 
+        border-bottom:solid 3px var(--first-color) ; 
+    }
+}

@@ -1,0 +1,70 @@
+.mat-mdc-form-field {
+    margin-top: 16px;
+  }
+  .all{
+    height: 300rem;
+  }
+  .titre{
+    color: #32325D;
+    border-left:solid 4px #5E72E4;
+    padding-left: 4px;
+  }
+  .frame{
+    display: grid;
+    gap: 1rem;
+    border: solid 1px black;
+    border-radius: 8px;
+    padding: 1rem;
+    
+  }
+.cards{
+      color: #32325D;
+
+  border: solid 1px black;
+    border-radius: 8px;
+    width: 100%;
+    padding: .5rem;
+}
+.button {
+color: #5E72E4;
+cursor: pointer;
+}
+.headC{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.button:hover {
+  color: #0056b3; /* Change the background color on hover */
+}
+
+.card{
+  display: none;
+  border: solid 2px black;
+    border-radius: 20px;
+    height: 4rem;
+    width: 50%;
+    padding: 1rem;
+
+}
+.dialog {
+  display: none;
+  width: 30rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 12px hsla(228, 15%, 8%, .4);
+}
+.modal-body{
+  display: grid;
+  gap: 1rem;
+  padding:1rem ;
+}
+.modal-footer{
+  gap: 1rem;
+}

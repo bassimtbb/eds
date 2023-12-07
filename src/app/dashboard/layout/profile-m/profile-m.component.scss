@@ -1,0 +1,81 @@
+.body{
+    display: flex;
+    gap: 2rem;
+}
+
+.img{
+    width: 10rem;
+    height: 10rem;
+    background-image: url("../../../../assets/profile.jpg");
+    align-items: flex-end;
+    background-position: top;
+    background-size: cover; 
+    justify-content: flex-end;
+    display: flex;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+}
+
+.donnees{
+    display: grid;
+    gap: 2rem;
+
+}
+.link{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:solid 1px black ;
+}
+.titre{
+    margin: 0%;
+    font-weight: bold;
+    font-size: large;
+}
+.header{
+    margin-bottom: 2rem;
+}
+.pic{
+    border-radius: 50%;
+    background-color: var(--first-color);
+    border-color:var(--first-color) ;
+    transform: translateY(-.25rem);
+    filter: drop-shadow(0 12px 12px var(--first-color));
+    border-width: 0.1rem;
+}
+.data{
+    margin: 0%;
+}
+.icon{
+    margin-left: 4rem;
+}
+.dialog {
+    display: none;
+    width: 30rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 12px hsla(228, 15%, 8%, .4);
+}
+.modal-body{
+    display: grid;
+    gap: 1rem;
+    padding:1rem ;
+}
+.modal-footer{
+    gap: 1rem;
+}
+@media screen and (max-width:993px){  
+.body{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.dialog {
+    width: 80%;
+}
+}

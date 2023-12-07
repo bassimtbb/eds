@@ -58,9 +58,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   // --first-color: hsl(var(--hue), 100%, 42%);//green
   // --first-color:hsl(14, 100%, 65%);// Orange
   --first-color: hsl(138, 54%, 59%);
+    --second-color: #5E75CF;
+
   // --first-color: hsl(250, 100%, 75%);//Purple
   --first-color-alt: hsl(var(--hue), 56%, 35%);
-  --title-color: hsl(228, 8%, 95%);
   --text-color: hsl(228, 8%, 65%);
   --body-color: hsl(228, 15%, 20%);
   --container-color: hsl(228, 15%, 15%);
